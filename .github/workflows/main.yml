@@ -23,5 +23,5 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./
-          server-dir: ./
+          server-dir: /pascal-lahme.de/
           dry-run: true
