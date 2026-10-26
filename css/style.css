@@ -445,7 +445,7 @@ a.card:hover h3 { color: var(--orange-text); }
   padding: 24px 0;
   border-bottom: 1px solid rgba(28, 27, 25, .25);
 }
-.contact-line .label { display: block; font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--brown); margin-bottom: 4px; }
+.contact-line .label { display: block; font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--orange-text); margin-bottom: 4px; }
 .contact-line .value { display: block; line-height: 1.15; font-size: clamp(20px, 2.2vw, 30px); font-weight: 800; letter-spacing: -.02em; word-break: break-word; }
 .round {
   flex: none;
