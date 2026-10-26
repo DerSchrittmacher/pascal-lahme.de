@@ -575,3 +575,6 @@ a.card:hover h3 { color: var(--orange-text); }
 @media (prefers-reduced-motion: reduce) {
   .nf-step, .nf-q, .nf-code { animation: none; opacity: var(--o, 1); }
 }
+.legal ul { margin: 10px 0 0; padding-left: 20px; color: var(--muted); }
+.legal li + li { margin-top: 4px; }
+.legal address { margin-top: 10px; }
