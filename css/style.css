@@ -83,7 +83,6 @@ h3 { font-size: 22px; letter-spacing: -.01em; line-height: 1.2; }
 .band--deep { background: var(--cream-deep); }
 .band--white { background: var(--white); }
 .band--sand { background: var(--sand); }
-.band + .band:not([class*="--"]) { border-top: 1px solid var(--rule-soft); }
 
 /* Platzhalter für fehlende Inhalte */
 .ph { font-family: var(--mono); font-size: .86em; color: var(--orange-text); }
@@ -301,7 +300,7 @@ a.card:hover h3 { color: var(--orange-text); }
 .quote {
   margin: 0;
   padding: 24px 28px;
-  background: var(--cream-deep);
+  background: var(--white);
   border-left: 3px solid var(--orange);
   font-size: 22px;
   line-height: 1.4;
@@ -645,3 +644,22 @@ main { flex: 1 0 auto; display: flex; flex-direction: column; }
 main > section:last-child { flex: 1 0 auto; }
 .contact-page { display: flex; align-items: center; }
 .contact-page > .wrap { width: 100%; }
+
+/* ---------- Farbsystem: Creme / Weiß / Anthrazit ---------- */
+/* Elemente auf weißen Sektionen bekommen Creme statt Weiß */
+.band--white .card,
+.band--white .review,
+.band--white .infobox,
+.band--white .quote,
+.band--white .chip,
+.band--white:not(.band--ink) .style-tile { background: var(--cream); }
+.band--white .btn--white { background: var(--cream); }
+.band--white .btn--white:hover { background: var(--ink); color: var(--cream); }
+.band--white .img { background: repeating-linear-gradient(135deg, #ece6da 0 14px, #f4f0e8 14px 28px); }
+.band--white .price-table tbody tr:hover { background: var(--cream); }
+
+/* Abschluss-Band dunkel */
+.band--ink.cta-band .text { color: var(--muted-on-dark); }
+.band--ink .contact-lines--compact .contact-line { background: var(--orange); color: var(--ink); }
+.band--ink .contact-lines--compact .contact-line.is-white { background: var(--white); color: var(--ink); }
+.band--ink .contact-lines--compact .contact-line:hover { background: var(--cream); }
