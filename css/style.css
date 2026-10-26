@@ -118,6 +118,8 @@ h3 { font-size: 22px; letter-spacing: -.01em; line-height: 1.2; }
   padding: 14px 24px;
   border-radius: 999px;
   border: 1.5px solid transparent;
+  background: transparent;
+  color: inherit;
   font: 700 15px/1.2 var(--font);
   cursor: pointer;
   transition: background-color var(--ease), color var(--ease), border-color var(--ease), transform var(--ease);
@@ -578,3 +580,6 @@ a.card:hover h3 { color: var(--orange-text); }
 .legal ul { margin: 10px 0 0; padding-left: 20px; color: var(--muted); }
 .legal li + li { margin-top: 4px; }
 .legal address { margin-top: 10px; }
+.styles-grid.is-collapsed .is-extra { display: none; }
+.more-row { justify-content: center; margin-top: 32px; }
+.more-btn[hidden] { display: none; }
