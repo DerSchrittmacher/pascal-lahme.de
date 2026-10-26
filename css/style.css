@@ -595,3 +595,4 @@ a.card:hover h3 { color: var(--orange-text); }
 .term-cta { margin-top: 32px; gap: 20px; }
 .band--ink .link:hover { color: var(--orange); }
 @media (max-width: 900px) { .term-cta .btn { flex: 1 1 100%; } .term-meta { margin-top: -24px; } }
+.price-table .or { font-weight: 500; color: var(--muted); }
