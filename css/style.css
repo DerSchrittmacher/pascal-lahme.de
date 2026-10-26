@@ -663,3 +663,11 @@ main > section:last-child { flex: 1 0 auto; }
 .band--ink .contact-lines--compact .contact-line { background: var(--orange); color: var(--ink); }
 .band--ink .contact-lines--compact .contact-line.is-white { background: var(--white); color: var(--ink); }
 .band--ink .contact-lines--compact .contact-line:hover { background: var(--cream); }
+
+/* Kontakt: Fußspuren im Hintergrund */
+.contact-page { position: relative; overflow: hidden; }
+.contact-page > .wrap { position: relative; z-index: 1; }
+.bg-trail { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; pointer-events: none; }
+.bg-step { fill: var(--orange); opacity: 0; --o: .22; animation: nf-step .45s ease-out forwards; animation-delay: calc(.3s + var(--i) * 110ms); }
+@media (max-width: 900px) { .bg-trail { width: 260%; } }
+@media (prefers-reduced-motion: reduce) { .bg-step { animation: none; opacity: var(--o); } }
