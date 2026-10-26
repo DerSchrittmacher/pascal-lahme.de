@@ -72,7 +72,6 @@ h1, h2, h3, h4 { margin: 0; font-weight: 800; letter-spacing: -.02em; line-heigh
 h1 { font-size: clamp(34px, 4.2vw, 56px); letter-spacing: -.03em; line-height: 1.02; }
 h2 { font-size: clamp(30px, 3.6vw, 48px); }
 h3 { font-size: 22px; letter-spacing: -.01em; line-height: 1.2; }
-.display { font-size: clamp(42px, 5.4vw, 68px); line-height: .98; }
 :focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
 .skip { position: absolute; left: -9999px; top: 8px; background: var(--ink); color: var(--cream); padding: 10px 16px; border-radius: 999px; z-index: 100; }
 .skip:focus { left: 8px; }
@@ -325,7 +324,7 @@ a.card:hover h3 { color: var(--orange-text); }
 .steps .num { font-weight: 800; color: var(--orange-text); font-size: 16px; padding-top: 2px; }
 .band--ink .steps, .band--ink .steps li { border-color: var(--rule-on-dark); }
 .band--ink .steps .num { color: var(--orange); }
-.steps h3 { font-size: 19px; margin-bottom: 6px; }
+.steps h3 { margin-bottom: 6px; }
 .steps .text { font-size: 15px; }
 
 .steps-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; list-style: none; margin: 0; padding: 0; }
@@ -351,7 +350,7 @@ a.card:hover h3 { color: var(--orange-text); }
 /* ---------- Tanzstile ---------- */
 .style-tile { display: grid; grid-template-columns: 136px 1fr; gap: 24px; padding: 20px; background: var(--ink-2); border-radius: var(--radius); }
 .style-tile .img { min-height: 0; aspect-ratio: 1; border-radius: var(--radius-sm); }
-.style-tile h3 { font-size: 21px; margin-bottom: 4px; }
+.style-tile h3 { margin-bottom: 4px; }
 .style-tile .tag { display: block; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
 .style-tile p { font-size: 15px; color: var(--muted-on-dark); }
 @media (max-width: 600px) { .style-tile { grid-template-columns: 84px 1fr; gap: 16px; padding: 16px; } }
@@ -364,7 +363,7 @@ a.card:hover h3 { color: var(--orange-text); }
 .dates { border-top: 1px solid var(--rule-on-dark); }
 .date-row { display: grid; grid-template-columns: 1fr auto; gap: 16px 24px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--rule-on-dark); }
 .date-row .when { font-size: 13px; font-weight: 700; color: var(--orange); letter-spacing: .02em; }
-.date-row h3 { font-size: 20px; margin: 4px 0 4px; }
+.date-row h3 { margin: 4px 0 4px; }
 .date-row .where { font-size: 14px; color: var(--muted-on-dark); }
 .date-row .btn-row { justify-content: flex-end; }
 .note { font-size: 13px; color: var(--faint); margin-top: 16px; }
@@ -378,7 +377,7 @@ a.card:hover h3 { color: var(--orange-text); }
 
 /* ---------- Infobox ---------- */
 .infobox { background: var(--white); border-radius: var(--radius); padding: 28px; }
-.infobox h3 { font-size: 19px; margin-bottom: 14px; }
+.infobox h3 { margin-bottom: 14px; }
 .infobox ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 15px; }
 .infobox strong { font-weight: 700; }
 
@@ -515,7 +514,7 @@ a.card:hover h3 { color: var(--orange-text); }
 /* ---------- Rechtstexte ---------- */
 .legal { max-width: 760px; }
 .legal h1 { margin-bottom: 40px; }
-.legal h2 { font-size: 22px; margin: 36px 0 10px; letter-spacing: -.01em; }
+.legal h3 { margin: 36px 0 10px; }
 .legal p, .legal address { color: var(--muted); font-style: normal; }
 .legal p + p { margin-top: 12px; }
 .legal a { text-decoration: underline; text-underline-offset: 3px; }
@@ -531,7 +530,6 @@ a.card:hover h3 { color: var(--orange-text); }
 .nf { background: var(--ink); color: var(--cream); padding: 64px 0 96px; min-height: calc(100vh - 88px); }
 .nf .eyebrow { color: var(--orange); }
 .nf .lead { color: var(--muted-on-dark); margin-top: 24px; max-width: 560px; }
-.nf h1 { font-size: clamp(34px, 4.2vw, 56px); line-height: 1.02; }
 .nf-code {
   font-size: clamp(120px, 19vw, 260px);
   font-weight: 800;
@@ -589,7 +587,7 @@ a.card:hover h3 { color: var(--orange-text); }
 .term-meta strong { color: var(--cream); font-weight: 700; }
 .term { background: var(--ink-2); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; gap: 8px; }
 .term__month { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--orange); }
-.term h3 { font-size: 19px; line-height: 1.25; flex: 1; }
+.term h3 { flex: 1; }
 .term__days { list-style: none; margin: 8px 0 0; padding: 14px 0 0; border-top: 1px solid var(--rule-on-dark); display: flex; gap: 8px; flex-wrap: wrap; }
 .term__days li { padding: 6px 12px; border-radius: 999px; background: rgba(244, 240, 232, .08); font-size: 14px; font-weight: 700; }
 .term-cta { margin-top: 32px; gap: 20px; }
