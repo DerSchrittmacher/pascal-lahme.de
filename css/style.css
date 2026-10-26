@@ -488,7 +488,7 @@ a.card:hover h3 { color: var(--orange-text); }
 .socials a:hover { border-color: var(--orange); color: var(--orange); }
 .socials svg { width: 19px; height: 19px; }
 @media (max-width: 900px) {
-  .foot-row { gap: 20px; }
+  .foot-row { flex-direction: column; gap: 20px; }
 }
 
 /* ---------- Handy: Leiste unten ---------- */
