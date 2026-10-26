@@ -583,3 +583,15 @@ a.card:hover h3 { color: var(--orange-text); }
 .styles-grid.is-collapsed .is-extra { display: none; }
 .more-row { justify-content: center; margin-top: 32px; }
 .more-btn[hidden] { display: none; }
+
+/* Tanzüben: Termin-Kacheln */
+.term-meta { list-style: none; margin: -16px 0 32px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 15px; color: var(--muted-on-dark); }
+.term-meta strong { color: var(--cream); font-weight: 700; }
+.term { background: var(--ink-2); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+.term__month { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--orange); }
+.term h3 { font-size: 19px; line-height: 1.25; flex: 1; }
+.term__days { list-style: none; margin: 8px 0 0; padding: 14px 0 0; border-top: 1px solid var(--rule-on-dark); display: flex; gap: 8px; flex-wrap: wrap; }
+.term__days li { padding: 6px 12px; border-radius: 999px; background: rgba(244, 240, 232, .08); font-size: 14px; font-weight: 700; }
+.term-cta { margin-top: 32px; gap: 20px; }
+.band--ink .link:hover { color: var(--orange); }
+@media (max-width: 900px) { .term-cta .btn { flex: 1 1 100%; } .term-meta { margin-top: -24px; } }
