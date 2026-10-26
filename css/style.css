@@ -470,11 +470,11 @@ a.card:hover h3 { color: var(--orange-text); }
 .hours dd { margin: 0; color: var(--sand-text, #3d3120); }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--ink); color: var(--muted-on-dark); padding: 32px 0; font-size: 14px; }
+.site-footer { background: var(--cream); color: var(--ink); border-top: 1px solid var(--rule-soft); padding: 32px 0; font-size: 14px; }
 .foot-row { display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; }
-.foot-copy { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--rule-on-dark); font-size: 12px; color: var(--faint); text-align: center; }
+.foot-copy { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--rule-soft); font-size: 12px; color: var(--muted); text-align: center; }
 .foot-legal { display: flex; gap: 24px; }
-.site-footer a:hover { color: var(--orange); }
+.site-footer a:hover { color: var(--orange-text); }
 .socials { display: flex; gap: 10px; }
 .socials a {
   display: grid;
@@ -482,11 +482,11 @@ a.card:hover h3 { color: var(--orange-text); }
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid rgba(244, 240, 232, .25);
-  color: var(--cream);
+  border: 1px solid var(--rule);
+  color: var(--ink);
   transition: border-color var(--ease), color var(--ease);
 }
-.socials a:hover { border-color: var(--orange); color: var(--orange); }
+.socials a:hover { border-color: var(--orange); color: var(--orange-text); }
 .socials svg { width: 19px; height: 19px; }
 @media (max-width: 900px) {
   .foot-row { flex-direction: column; gap: 20px; }
@@ -621,7 +621,6 @@ a.card:hover h3 { color: var(--orange-text); }
 }
 
 .band--ink .legal h1 { margin: 0; }
-body:has(.nf) .site-footer { border-top: 1px solid var(--rule-on-dark); }
 
 /* Einheitliche Höhe aller Seitenköpfe (Maß: Paartanz) */
 :root { --head-h: 570px; }
