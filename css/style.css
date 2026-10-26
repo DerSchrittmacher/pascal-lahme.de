@@ -596,3 +596,8 @@ a.card:hover h3 { color: var(--orange-text); }
 .band--ink .link:hover { color: var(--orange); }
 @media (max-width: 900px) { .term-cta .btn { flex: 1 1 100%; } .term-meta { margin-top: -24px; } }
 .price-table .or { font-weight: 500; color: var(--muted); }
+
+/* Tanzstile auf hellem Grund */
+.band:not(.band--ink) .style-tile { background: var(--white); }
+.band:not(.band--ink) .style-tile p { color: var(--muted); }
+.band:not(.band--ink) .style-tile .tag { color: var(--orange-text); }
