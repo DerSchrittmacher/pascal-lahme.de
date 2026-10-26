@@ -695,3 +695,5 @@ main > section:last-child { flex: 1 0 auto; }
   .to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
   .has-sticky .to-top { bottom: 88px; }
 }
+.to-top.on-dark { background: var(--cream); color: var(--ink); }
+.to-top.on-dark:hover, .to-top.on-dark:focus-visible { background: var(--orange); color: var(--ink); }

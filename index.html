@@ -121,7 +121,7 @@
 <script>
 (function(){var b=document.querySelector('.menu-btn'),h=document.getElementById('kopf');if(!b)return;
 b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Menü schließen':'Menü öffnen');});})();
-(function(){var t=document.querySelector('.to-top');if(!t)return;var f=function(){var long=document.documentElement.scrollHeight>window.innerHeight*2.5;t.classList.toggle('is-visible',long&&window.scrollY>window.innerHeight);};window.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);f();})();
+(function(){var t=document.querySelector('.to-top');if(!t)return;var f=function(){var long=document.documentElement.scrollHeight>window.innerHeight*2.5;t.classList.toggle('is-visible',long&&window.scrollY>window.innerHeight);var r=t.getBoundingClientRect(),dark=false,els=document.elementsFromPoint(r.left+r.width/2,r.top+r.height/2);for(var i=0;i<els.length;i++){if(t.contains(els[i]))continue;dark=!!els[i].closest('.band--ink,.hero--ink,.nf');break;}t.classList.toggle('on-dark',dark);};window.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);f();})();
 </script>
 </body>
 </html>
