@@ -669,3 +669,29 @@ main > section:last-child { flex: 1 0 auto; }
 .contact-page > .wrap { position: relative; z-index: 1; }
 .wm { position: absolute; right: -120px; top: 50%; transform: translateY(-50%); width: 720px; height: 720px; opacity: .07; pointer-events: none; }
 @media (max-width: 900px) { .wm { width: 420px; height: 420px; right: -140px; top: auto; bottom: -60px; transform: none; } }
+
+/* Nach-oben-Button */
+.to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 45;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--cream);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity var(--ease), transform var(--ease), background-color var(--ease), color var(--ease);
+}
+.to-top svg { width: 20px; height: 20px; }
+.to-top.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover, .to-top:focus-visible { background: var(--orange); color: var(--ink); }
+@media (max-width: 900px) {
+  .to-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+  .has-sticky .to-top { bottom: 88px; }
+}

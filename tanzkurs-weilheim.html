@@ -25,7 +25,7 @@
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Brauche ich Vorkenntnisse?","acceptedAnswer":{"@type":"Answer","text":"Nein. Einsteigerkurse und Privatstunden beginnen bei null."}},{"@type":"Question","name":"Was ist das geführte Tanzüben?","acceptedAnswer":{"@type":"Answer","text":"Bekannte Inhalte werden gemeinsam wiederholt und vertieft. Im Mittelpunkt stehen Übung, Technik, Führen & Folgen und das Tanzen zur Musik. Jedes Thema gibt es zweimal mit gleichem Inhalt: mittwochs abends und samstags vormittags."}}]}
 </script>
 </head>
-<body class="has-sticky">
+<body id="top" class="has-sticky">
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <header class="site-header" id="kopf">
   <div class="wrap head-in">
@@ -211,10 +211,12 @@
     <p class="foot-copy">© 2026 Der Schrittmacher <span aria-hidden="true">·</span> Webdesign: <a href="https://cmg-marketing.de/" rel="noopener" target="_blank">CMG Marketing</a></p>
   </div>
 </footer>
+<a class="to-top" href="#top" aria-label="Nach oben"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
 <div class="sticky-bar"><a class="btn btn--orange" href="/kontakt">Probestunde anfragen</a><a class="btn btn--dark" href="https://wa.me/4916098765949" rel="noopener" target="_blank">WhatsApp</a></div>
 <script>
 (function(){var b=document.querySelector('.menu-btn'),h=document.getElementById('kopf');if(!b)return;
 b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Menü schließen':'Menü öffnen');});})();
+(function(){var t=document.querySelector('.to-top');if(!t)return;var f=function(){var long=document.documentElement.scrollHeight>window.innerHeight*2.5;t.classList.toggle('is-visible',long&&window.scrollY>window.innerHeight);};window.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);f();})();
 </script>
 </body>
 </html>
